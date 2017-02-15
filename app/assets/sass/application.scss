@@ -418,6 +418,7 @@
     .context {
       
       display: none;
+      
       @include media(mobile) {
         
         display: block;
@@ -431,9 +432,9 @@
             display: inline-block;
             height: 0;
             width: 0;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-right: 10px solid $black;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid $black;
             margin-right: 10px;
           }
         }
