@@ -416,21 +416,29 @@
 
   .govuk-title {
     .context {
-      a {
-        color: $text-colour;
-        text-decoration: underline;
+      
+      display: none;
+      @include media(mobile) {
+        
+        display: block;
+        
+        a {
+          color: $text-colour;
+          text-decoration: underline;
 
-        &:before {
-          content: " ";
-          display: inline-block;
-          height: 0;
-          width: 0;
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
-          border-right: 10px solid $black;
-          margin-right: 10px;
+          &:before {
+            content: " ";
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid $black;
+            margin-right: 10px;
+          }
         }
       }
+
     }
   }
 
